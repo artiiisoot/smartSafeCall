@@ -364,9 +364,9 @@
           .anw {
             padding: vw(12 * 2);
             gap: vw(12 * 2);
-            align-items: flex-start;
             > div {
               gap: vw(12 * 2);
+              align-items: flex-start;
               h1 {
                 font-size: vw(32 * 2);
               }

@@ -2324,10 +2324,10 @@ footer .copyright {
   section.section-05 .accordion .accordion-item .anw {
     padding: 3.125vw;
     gap: 3.125vw;
-    align-items: flex-start;
   }
   section.section-05 .accordion .accordion-item .anw > div {
     gap: 3.125vw;
+    align-items: flex-start;
   }
   section.section-05 .accordion .accordion-item .anw > div h1 {
     font-size: 8.3333333333vw;
