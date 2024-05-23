@@ -662,9 +662,11 @@
 
     // 자주 묻는 질문 (아코디언 아이템)
     const accordion = document.querySelectorAll(".accordion-item");
+    const accordionBtn = document.querySelector(".btn-accordion img");
     for (let i = 0; i < accordion.length; i++) {
       accordion[i].addEventListener("click", function () {
         this.classList.toggle("active");
+        accordionBtn.src = "./assets/images/section5/svg/icon-minus.svg";
       });
     }
 
