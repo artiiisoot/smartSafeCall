@@ -1529,7 +1529,7 @@ section.section-05 .accordion .accordion-item {
   cursor: pointer;
 }
 section.section-05 .accordion .accordion-item.active .que button {
-  background: url("/assets/images/section5/icon-minus.svg") center center no-repeat;
+  background: url("../images/section5/icon-minus.svg") center center no-repeat;
 }
 section.section-05 .accordion .accordion-item.active .anw {
   display: block;
@@ -1564,7 +1564,7 @@ section.section-05 .accordion .accordion-item .que > div p {
 }
 section.section-05 .accordion .accordion-item .que button {
   cursor: pointer;
-  background: url("/assets/images/section5/icon-plus.svg") center center no-repeat;
+  background: url("../images/section5/icon-plus.svg") center center no-repeat;
   width: 1.5rem;
   height: 1.5rem;
 }

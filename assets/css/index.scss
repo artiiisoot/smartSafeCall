@@ -598,7 +598,7 @@ section {
         &.active {
           .que {
             button {
-              background: url("/assets/images/section5/icon-minus.svg")
+              background: url("../images/section5/icon-minus.svg")
                 center center no-repeat;
             }
           }
@@ -637,7 +637,7 @@ section {
 
           button {
             cursor: pointer;
-            background: url("/assets/images/section5/icon-plus.svg") center
+            background: url("../images/section5/icon-plus.svg") center
               center no-repeat;
             width: 1.5rem;
             height: 1.5rem;
