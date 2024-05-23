@@ -1578,7 +1578,7 @@ section.section-05 .accordion .accordion-item .anw {
 section.section-05 .accordion .accordion-item .anw > div {
   display: flex;
   column-count: auto;
-  align-items: flex-start;
+  align-items: center;
   gap: 1.5rem;
 }
 section.section-05 .accordion .accordion-item .anw > div h1 {
@@ -2322,6 +2322,7 @@ footer .copyright {
   section.section-05 .accordion .accordion-item .anw {
     padding: 3.125vw;
     gap: 3.125vw;
+    align-items: flex-start;
   }
   section.section-05 .accordion .accordion-item .anw > div {
     gap: 3.125vw;

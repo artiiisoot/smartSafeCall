@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/common/reset.css" />
     <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
     <title>스마트 안심번호 - 안심주차</title>
   </head>
   <body>
@@ -666,17 +667,8 @@
     for (let i = 0; i < accordion.length; i++) {
       accordion[i].addEventListener("click", function () {
         this.classList.toggle("active");
-        accordionBtn.src = "./assets/images/section5/svg/icon-minus.svg";
       });
     }
-
-    const main = document.querySelector(".section-01");
-    window.addEventListener("load", () => {});
-
-    // const section = document.querySelectorAll("section");
-    // window.addEventListener("scroll", ()=> {
-
-    // })
 
     window.addEventListener("load", () => {
       const element = document.querySelectorAll(".background-img");
@@ -686,7 +678,7 @@
         setTimeout(() => {
           console.log(idx);
           items.classList.add("visible");
-        }, idx * 600);
+        }, idx * 300);
       });
     });
   </script>
