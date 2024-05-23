@@ -111,6 +111,7 @@ header {
     padding: 1.25rem 1.25rem;
   }
   .logo {
+    cursor: pointer;
     display: flex;
     align-items: center;
     column-count: auto;
@@ -182,6 +183,7 @@ section {
       }
 
       .title {
+        cursor: pointer;
         display: flex;
         flex-direction: column;
         column-count: auto;
@@ -598,8 +600,8 @@ section {
         &.active {
           .que {
             button {
-              background: url("../images/section5/icon-minus.svg")
-                center center no-repeat;
+              background: url("../images/section5/icon-minus.svg") center center
+                no-repeat;
             }
           }
           .anw {
@@ -637,8 +639,8 @@ section {
 
           button {
             cursor: pointer;
-            background: url("../images/section5/icon-plus.svg") center
-              center no-repeat;
+            background: url("../images/section5/icon-plus.svg") center center
+              no-repeat;
             width: 1.5rem;
             height: 1.5rem;
           }

@@ -1093,6 +1093,7 @@ header .container {
   padding: 1.25rem 1.25rem;
 }
 header .logo {
+  cursor: pointer;
   display: flex;
   align-items: center;
   column-count: auto;
@@ -1157,6 +1158,7 @@ section.section-01 .text-item p {
   color: #333333;
 }
 section.section-01 .text-item .title {
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   column-count: auto;

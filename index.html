@@ -3,15 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="naver-site-verification"
+      content="a10b313c1d24a8cb1672ab227c21b67673534054"
+    />
+    <meta
+      name="keywords"
+      content="스마트안심번호, 안심번호, 안심전화번호, 안심주차, 주차안심, 라온안심번호, 주차번호, 주차안심번호, 안심번호주차번호판, 안심번호발급, 전화번호, 차량용연락처, 투넘버서비스, 차량전화번호판, 듀얼번호, 안심번호주차번호판, 안심번호문자, 주차안심번호, 주차안심번호서비스, 차량용전화번호, 안심번호만들기, 차량안심번호, 가상번호, 안심전화번호발급, 안심번호서비스"
+    />
+    <meta
+      name="description"
+      content="전화번호 노출 없는 양방향 가상 전화번호 스마트 안심번호 - 안심주차 서비스."
+    />
+    <meta property="og:title" content="스마트 안심번호 - 안심주차" />
+    <meta
+      property="og:description"
+      content="전화번호 노출 없는 양방향 가상 전화번호 스마트 안심번호 - 안심주차 서비스."
+    />
     <link rel="stylesheet" href="./assets/css/common/reset.css" />
     <link rel="stylesheet" href="./assets/css/index.css" />
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
     <title>스마트 안심번호 - 안심주차</title>
+
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-V3GJHTFP1S");
+    </script>
   </head>
   <body>
     <header>
       <div class="container">
-        <div class="logo">
+        <div class="logo" onclick="handleCall()">
           <img src="./assets/images/logo.svg" alt="로고" />
           <h5>스마트 안심번호 <span class="pc-only-inline">1877-1875</span></h5>
         </div>
@@ -19,12 +46,12 @@
         <div class="spacer"></div>
 
         <div class="button-group">
-          <button class="btn-login">로그인</button>
+          <button class="btn-login" onclick="moveLogin()">로그인</button>
           <span class="mo-only-inline line"></span>
-          <button class="btn-signup">회원가입</button>
+          <button class="btn-signup" onclick="moveJoin()">회원가입</button>
         </div>
 
-        <button class="mo-only">
+        <button class="mo-only" onclick="handleCall()">
           <img src="./assets/images/icon-call.svg" alt="전화연결" />
         </button>
       </div>
@@ -38,14 +65,14 @@
             양방향 가상 전화번호
           </p>
 
-          <div class="title">
+          <div class="title" onclick="handleCall()">
             <h5>스마트 안심번호 안심주차</h5>
             <h4>1877-1875</h4>
           </div>
 
           <div class="button-group">
-            <button class="btn-login">로그인</button>
-            <button class="btn-signup">회원가입</button>
+            <button class="btn-login" onclick="moveLogin()">로그인</button>
+            <button class="btn-signup" onclick="moveJoin()">회원가입</button>
           </div>
         </div>
 
@@ -621,6 +648,19 @@
   </body>
 
   <script>
+    // 메인화면 이미지 인터렉션
+    window.addEventListener("load", () => {
+      const element = document.querySelectorAll(".background-img");
+      const elementArray = Array.from(element);
+
+      elementArray.forEach((items, idx) => {
+        setTimeout(() => {
+          console.log(idx);
+          items.classList.add("visible");
+        }, idx * 300);
+      });
+    });
+    // 해상도 변경에 따른 오브젝트 변경
     window.addEventListener("load", () => {
       const viewportWidth = window.innerWidth;
       const background = document.querySelector(".background-01");
@@ -660,7 +700,6 @@
         }
       }
     });
-
     // 자주 묻는 질문 (아코디언 아이템)
     const accordion = document.querySelectorAll(".accordion-item");
     const accordionBtn = document.querySelector(".btn-accordion img");
@@ -670,16 +709,15 @@
       });
     }
 
-    window.addEventListener("load", () => {
-      const element = document.querySelectorAll(".background-img");
-      const elementArray = Array.from(element);
-
-      elementArray.forEach((items, idx) => {
-        setTimeout(() => {
-          console.log(idx);
-          items.classList.add("visible");
-        }, idx * 300);
-      });
-    });
+    // 이벤트 핸들
+    const handleCall = () => {
+      document.location.href = "tel:1877-1875";
+    };
+    const moveJoin = () => {
+      window.open("https://parking.ring2pay.com/join");
+    };
+    const moveLogin = () => {
+      window.open("https://parking.ring2pay.com/");
+    };
   </script>
 </html>
